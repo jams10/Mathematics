@@ -3,6 +3,8 @@ using UnsignedInteger;
 
 class MainClass {
   public static void Main (string[] args) {
-    AdditionOverflow.run();
+    AdditionOverflow.test1();
+    AdditionOverflow.test2();
+    AdditionOverflow.test3();
   }
 }
