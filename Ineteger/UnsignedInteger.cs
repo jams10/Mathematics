@@ -39,5 +39,5 @@ namespace UnsignedInteger
 // int8   sbyte
 // uint8  byte
 
-// Static method does not create object and call directly.
+// Static method does not create object and is called directly.
 // ex) AdditionOverflow.test1();
