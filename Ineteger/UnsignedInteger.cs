@@ -4,6 +4,9 @@ namespace UnsignedInteger
 {
   public class AdditionOverflow
   {
+    /*
+      The value range of unsigned 8 bit intger is 0 ~ 255.
+    */
     public static void test1() // static method. 
     {
       byte n1 = 255; // unsigned 8 bit integer 0xFF
@@ -12,6 +15,9 @@ namespace UnsignedInteger
       Console.WriteLine($"unit8 {n1} + {n2} = {result}"); 
       // result is '0'. Overflow
     }
+    /*
+      Test 1 and Test 2 have same result.
+    */
     public static void test2()
     {
       byte n1 = 255;
