@@ -1,13 +1,13 @@
 using System;
 
-namespace SignedInteger
+namespace Signed_Integer
 {
-  public class TwoComplement
+  public class Two_Complement
   {
     /*
       Print number by hexadecimal.
     */
-    public static void ExpressNegativeIntger()
+    public static void Express_Negative_Intger()
     {
       int n = -1;
       Console.WriteLine($"{n:X}"); // result is FFFFFFFF
@@ -15,13 +15,13 @@ namespace SignedInteger
     /*
       Print number by binary.
     */
-    public static void PositiveSignedInteger()
+    public static void Positive_Signed_Integer()
     {
       int n = 8;
       string binary = Convert.ToString(n, 2);
       Console.WriteLine($"decimal number {n} is {binary} in binary.");
     }
-    public static void NegativeSignedInteger()
+    public static void Negative_Signed_Integer()
     {
       int n = -8;
       string binary = Convert.ToString(n, 2);
@@ -33,7 +33,7 @@ namespace SignedInteger
     /*
       Signed integer overflow example
     */
-    public static void SignedIntegerAdditionOverflow()
+    public static void Signed_Integer_Addition_Overflow()
     {
       sbyte n1 = 1;
       sbyte n2 = 127;

@@ -1,8 +1,8 @@
 using System;
 
-namespace UnsignedInteger
+namespace Unsigned_Integer
 {
-  public class AdditionOverflow
+  public class Addition_Overflow
   {
     /*
       The value range of unsigned 8 bit intger is 0 ~ 255.

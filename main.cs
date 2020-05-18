@@ -1,16 +1,15 @@
 using System;
-using UnsignedInteger;
-using SignedInteger;
+using Unsigned_Integer;
+using Signed_Integer;
 
 class MainClass {
   public static void Main (string[] args) {
-    AdditionOverflow.test1();
-    AdditionOverflow.test2();
-    AdditionOverflow.test3();
+    Addition_Overflow.test1();
+    Addition_Overflow.test2();
+    Addition_Overflow.test3();
     
-    TwoComplement.ExpressNegativeIntger();
-    TwoComplement.PositiveSignedInteger();
-    TwoComplement.NegativeSignedInteger();
-    TwoComplement.SignedIntegerAdditionOverflow();
+    Two_Complement.Express_Negative_Intger();
+    Two_Complement.Negative_Signed_Integer();
+    Two_Complement.Signed_Integer_Addition_Overflow();
   }
 }
