@@ -3,12 +3,14 @@
 
 int main()
 {
+	/*
 	int size = 0;
 	int* pArr;
 
 	std::cout << "Enter the size of the square matrix : ";
 	std::cin >> size;
-	
+
+
 	// size*size 만큼의 행렬 생성
 	SquareMatrix m(size);
 
@@ -22,7 +24,7 @@ int main()
 	}
 
 	m.SetMatrix(pArr);
-	
+
 	// 행렬 출력
 	for (int i = 0; i < size * 4 + 1; i++)
 	{
@@ -36,4 +38,36 @@ int main()
 	std::cout << "det(m) : " << m.GetDet(m, size) << std::endl;
 
 	delete[] pArr;
+	*/
+	
+	// 행렬 연산
+	SquareMatrix m1(3);
+	SquareMatrix m2(3);
+
+	int arr1[9] = { 1,0,0,0,1,0,0,0,1 };
+	int arr2[9] = { 1,2,3,4,5,6,7,8,9 };
+
+	m1.SetMatrix(arr1);
+	m2.SetMatrix(arr2);
+
+	//m1.ShowMatrix();
+	//m2.ShowMatrix();
+
+	SquareMatrix m3(3);
+	m3 = m2 + m1;
+	//m2 + m1;
+	m3.ShowMatrix();
+
+	//m2.ShowMatrix();
+
+	//m3.ShowMatrix();
+
+	//m3 = m1 - m2;
+
+	//m3.ShowMatrix();
+
+	//m3 = m1 * m2;
+
+	//m3.ShowMatrix();
+	
 }

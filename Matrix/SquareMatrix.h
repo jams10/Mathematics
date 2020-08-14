@@ -8,12 +8,20 @@
 class SquareMatrix
 {
 public:
+	SquareMatrix();
 	SquareMatrix(const int& size_in);
+	SquareMatrix(const int& size_in, const int& name);
+	SquareMatrix(const int& size_in, const int* arr, const int& name);
 	~SquareMatrix();
 	void SetMatrix(const int* arr);
 	void ShowMatrix() const;
 	int GetDet(const SquareMatrix& m, int& size);
+	SquareMatrix operator+(SquareMatrix& m);
+	SquareMatrix operator-(SquareMatrix& m);
+	SquareMatrix operator*(SquareMatrix& m);
+	SquareMatrix& operator=(const SquareMatrix& m);
 private:
 	int size;
+	int name = 0;
 	int* pArr;
 };
