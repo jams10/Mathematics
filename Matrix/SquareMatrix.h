@@ -9,9 +9,8 @@ class SquareMatrix
 {
 public:
 	SquareMatrix();
+	SquareMatrix(const SquareMatrix& ref); // 복사 생성자
 	SquareMatrix(const int& size_in);
-	SquareMatrix(const int& size_in, const int& name);
-	SquareMatrix(const int& size_in, const int* arr, const int& name);
 	~SquareMatrix();
 	void SetMatrix(const int* arr);
 	void ShowMatrix() const;
@@ -22,6 +21,5 @@ public:
 	SquareMatrix& operator=(const SquareMatrix& m);
 private:
 	int size;
-	int name = 0;
 	int* pArr;
 };

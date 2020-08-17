@@ -3,7 +3,6 @@
 
 int main()
 {
-	/*
 	int size = 0;
 	int* pArr;
 
@@ -38,7 +37,6 @@ int main()
 	std::cout << "det(m) : " << m.GetDet(m, size) << std::endl;
 
 	delete[] pArr;
-	*/
 	
 	// 행렬 연산
 	SquareMatrix m1(3);
@@ -50,24 +48,20 @@ int main()
 	m1.SetMatrix(arr1);
 	m2.SetMatrix(arr2);
 
-	//m1.ShowMatrix();
-	//m2.ShowMatrix();
-
 	SquareMatrix m3(3);
+	
+	// 덧셈
 	m3 = m2 + m1;
-	//m2 + m1;
 	m3.ShowMatrix();
+	std::cout << std::endl;
 
-	//m2.ShowMatrix();
+	// 뺄셈
+	m3 = m2 - m1;
+	m3.ShowMatrix();
+	std::cout << std::endl;
 
-	//m3.ShowMatrix();
-
-	//m3 = m1 - m2;
-
-	//m3.ShowMatrix();
-
-	//m3 = m1 * m2;
-
-	//m3.ShowMatrix();
+	// 곱셈
+	m3 = m2 * m1;
+	m3.ShowMatrix();
 	
 }
